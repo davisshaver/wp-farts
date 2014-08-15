@@ -13,7 +13,7 @@ if ( !is_admin() ) {
 
 	function fart_js(){
 
-		wp_enqueue_script('fart', plugin_dir_url( __FILE__ ). 'fart.js', array('jQuery'), false, false);
+		wp_enqueue_script( 'fart', plugins_url( 'fart.js' , __FILE__ ) , array('jquery'), false, false);
 
 	}
 
